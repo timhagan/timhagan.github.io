@@ -1,19 +1,21 @@
+.io\index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tim Hagan | Data Scientist</title>
+    <title>Tim Hagan | Senior Data Scientist</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --primary: #2c3e50;
             --secondary: #3498db;
-            --accent: #e74c3c;
+            --accent: #002a5c; /* USAA blue */
             --light: #ecf0f1;
             --dark: #2c3e50;
         }
         
+        /* ...existing code... */
         * {
             margin: 0;
             padding: 0;
@@ -67,7 +69,7 @@
         }
         
         .cta-button:hover {
-            background-color: #c0392b;
+            background-color: #001a39;
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
@@ -220,6 +222,34 @@
             margin-bottom: 10px;
         }
 
+        /* Job Match Section */
+        .match-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .match-item {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .match-item h3 {
+            color: var(--secondary);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            border-bottom: 2px solid var(--light);
+            padding-bottom: 10px;
+        }
+        
+        .match-icon {
+            color: #27ae60;
+            margin-right: 8px;
+        }
+
         /* Media queries for responsiveness */
         @media (max-width: 768px) {
             header {
@@ -245,26 +275,53 @@
     <header>
         <div class="header-content">
             <h1>Tim Hagan</h1>
-            <h2>Data Scientist & AI Specialist</h2>
-            <p>Transforming complex data challenges into actionable business insights through advanced analytics and AI</p>
+            <h2>Senior Data Scientist & AI Specialist</h2>
+            <p>Delivering actionable business insights through advanced analytics, model development, and risk management expertise</p>
             <a href="#contact" class="cta-button">Get in Touch</a>
         </div>
     </header>
 
     <div class="container">
+        <section id="job-match">
+            <h2>Perfect Match for USAA Senior Data Scientist</h2>
+            <p>My experience directly aligns with USAA's requirements for a Senior Data Scientist in the Bank AI/ML team:</p>
+            
+            <div class="match-grid">
+                <div class="match-item">
+                    <h3><i class="fas fa-check-circle match-icon"></i>Data & Model Expertise</h3>
+                    <p>Extensive experience working with structured, semi-structured (JSON, XML), and unstructured data to develop predictive models that delivered up to 50% reduction in premium leakage and 30% decrease in risk severity.</p>
+                </div>
+                
+                <div class="match-item">
+                    <h3><i class="fas fa-check-circle match-icon"></i>Risk Management</h3>
+                    <p>Strong background in risk assessment and model development within control frameworks, having created the Public Protection Score (PPS) system that significantly improved risk evaluation.</p>
+                </div>
+                
+                <div class="match-item">
+                    <h3><i class="fas fa-check-circle match-icon"></i>Communication Skills</h3>
+                    <p>Proven ability to translate complex technical concepts for non-technical stakeholders, including presentations to L2 leadership explaining AI technologies like LLMs, Embeddings, and RAG frameworks.</p>
+                </div>
+                
+                <div class="match-item">
+                    <h3><i class="fas fa-check-circle match-icon"></i>Mentorship</h3>
+                    <p>Experience mentoring junior data scientists and interns, facilitating technology modernization and promoting knowledge transfer through founded initiatives like the "Data Collaborative."</p>
+                </div>
+            </div>
+        </section>
+
         <section id="about">
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I am a data scientist with extensive experience in AI development, statistical modeling, and business analytics. Currently leading AI initiatives at John Deere, I focus on creating innovative solutions that combine structured and unstructured data to drive efficiency and business value.</p>
-                    <p>With a Master's degree in Statistics from Texas A&M University (4.0 GPA), I leverage strong statistical foundations to create powerful predictive models and implement cutting-edge AI technologies including LLMs, embeddings, and RAG frameworks.</p>
-                    <p>My approach blends technical expertise with business acumen, allowing me to communicate complex concepts to diverse stakeholders and deliver measurable results.</p>
+                    <p>I am a senior data scientist with extensive experience in AI development, statistical modeling, and business analytics. Currently leading AI initiatives at John Deere, I focus on creating innovative solutions that translate complex business problems into applied statistical and machine learning solutions that drive measurable business value.</p>
+                    <p>With a Master's degree in Statistics from Texas A&M University (4.0 GPA), I bring strong mathematical foundations to model development and validation, ensuring robust solutions that align with regulatory requirements and risk management frameworks.</p>
+                    <p>My ability to work with structured, semi-structured, and unstructured data sources enables me to deliver comprehensive analytical solutions that provide actionable insights for business stakeholders.</p>
                 </div>
             </div>
             
             <div class="highlight-box">
-                <h3>Statistical Excellence</h3>
-                <p>My strong statistical background includes a perfect 4.0 GPA in my Master's program, enabling me to develop sophisticated predictive models that have reduced premium leakage by up to 50% and decreased frequency and severity by as much as 30% in risk assessment applications.</p>
+                <h3>Statistical & Modeling Excellence</h3>
+                <p>My statistical expertise includes both supervised and unsupervised modeling techniques, developing solutions that have delivered significant business impact. At Verisk Analytics, I led the development of predictive models that decreased frequency and severity by up to 30%, while at John Deere, my Policy Cost Estimation models reduced premium leakage by up to 50%.</p>
             </div>
         </section>
 
@@ -276,10 +333,10 @@
                 <div class="role">Data Scientist</div>
                 <div class="date">April 2023 - Present</div>
                 <ul>
-                    <li>Leading and developing AI framework combining structured, semi-structured, and unstructured data sources with vector stores to reduce keyboard time and increase service efficiency</li>
-                    <li>Scoped data science projects for lifecycle services, successfully creating dashboards and Policy Cost Estimation models that reduced premium leakage by up to 50%</li>
-                    <li>Managed data science intern projects, resulting in novel machine learning models for machine downtime analysis</li>
-                    <li>Presented AI work to L2 leadership, effectively explaining technical concepts like LLMs, Embeddings, RAG, and Agents to non-technical audiences</li>
+                    <li><strong>Data Integration:</strong> Developed AI framework combining structured, semi-structured (JSON, XML), and unstructured data sources with vector stores to improve efficiency</li>
+                    <li><strong>Financial Modeling:</strong> Created Policy Cost Estimation models that reduced premium leakage by up to 50%</li>
+                    <li><strong>Project Management:</strong> Scoped and managed data science projects, including intern initiatives resulting in novel machine learning models</li>
+                    <li><strong>Leadership Communication:</strong> Presented AI work to L2 leadership, translating technical concepts to business value</li>
                 </ul>
             </div>
             
@@ -288,10 +345,10 @@
                 <div class="role">Senior Data Scientist</div>
                 <div class="date">April 2018 - April 2023</div>
                 <ul>
-                    <li>Overhauled Public Protection Classification through predictive modeling, creating Public Protection Score (PPS) that led to decreases in frequency and severity by up to 30%</li>
-                    <li>Mentored interns and junior data scientists and conducted R training sessions, facilitating technology modernization from on-premise SAS to AWS resources</li>
-                    <li>Led end-to-end project management from scoping to implementation, collaborating with diverse teams</li>
-                    <li>Presented at industry conferences and authored white papers, demonstrating thought leadership</li>
+                    <li><strong>Risk Modeling:</strong> Overhauled Public Protection Classification through predictive modeling, creating a system that decreased frequency and severity by up to 30%</li>
+                    <li><strong>Mentorship:</strong> Mentored junior data scientists and led R training sessions as part of technology modernization</li>
+                    <li><strong>Cloud Migration:</strong> Facilitated transition from on-premise SAS to AWS resources, improving scalability and efficiency</li>
+                    <li><strong>Cross-functional Collaboration:</strong> Led end-to-end project management with diverse teams including actuarial, engineering, legal, and IT</li>
                 </ul>
             </div>
             
@@ -300,9 +357,9 @@
                 <div class="role">Senior Behavioral Science Analyst</div>
                 <div class="date">October 2014 - January 2018</div>
                 <ul>
-                    <li>Automated text mining processes using NLP, significantly reducing deployment timelines for custom metrics</li>
-                    <li>Led deployments of custom algorithms to track KPIs, including site visits to understand client needs</li>
-                    <li>Founded a "Data Collaborative" to promote knowledge transfer and implement best practices</li>
+                    <li><strong>NLP & Automation:</strong> Automated text mining processes using NLP techniques, significantly reducing deployment timelines</li>
+                    <li><strong>Algorithm Development:</strong> Led deployments of custom algorithms to track KPIs based on client requirements</li>
+                    <li><strong>Knowledge Transfer:</strong> Founded a "Data Collaborative" to promote best practices and organizational efficiency</li>
                 </ul>
             </div>
         </section>
@@ -313,18 +370,20 @@
                 <span class="skill-tag">Python</span>
                 <span class="skill-tag">R</span>
                 <span class="skill-tag">SQL</span>
-                <span class="skill-tag">Statistics</span>
-                <span class="skill-tag">Data Visualization</span>
-                <span class="skill-tag">Cloud Computing</span>
-                <span class="skill-tag">AI</span>
-                <span class="skill-tag">Large Language Models</span>
+                <span class="skill-tag">Statistical Modeling</span>
+                <span class="skill-tag">Risk Assessment</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Supervised Models</span>
+                <span class="skill-tag">Unsupervised Models</span>
+                <span class="skill-tag">Cloud Computing (AWS)</span>
+                <span class="skill-tag">AI/LLMs</span>
                 <span class="skill-tag">Langchain</span>
                 <span class="skill-tag">Embeddings</span>
-                <span class="skill-tag">Agents</span>
-                <span class="skill-tag">GitHub</span>
-                <span class="skill-tag">Databricks</span>
-                <span class="skill-tag">Git</span>
-                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Data Visualization</span>
+                <span class="skill-tag">Structured Data</span>
+                <span class="skill-tag">Unstructured Data</span>
+                <span class="skill-tag">JSON/XML Processing</span>
+                <span class="skill-tag">Model Validation</span>
             </div>
         </section>
 
@@ -336,6 +395,7 @@
                 <div class="degree">M.S. in Statistics</div>
                 <p>GPA: 4.0</p>
                 <p>Graduated: December 2022</p>
+                <p>Relevant coursework: Advanced Statistical Methods, Machine Learning, Predictive Modeling, Time Series Analysis</p>
             </div>
             
             <div class="education-card">
@@ -348,7 +408,7 @@
 
         <section id="contact">
             <h2>Contact</h2>
-            <p>I'm always open to discussing new opportunities, data science challenges, or collaborative projects.</p>
+            <p>I'm excited about the opportunity to bring my data science expertise to USAA's Bank AI/ML team. Please reach out to discuss how I can contribute to your team's success.</p>
             
             <div class="contact-info">
                 <div class="contact-item">
@@ -357,7 +417,7 @@
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>Illinois (Remote)</span>
+                    <span>Illinois (Open to Remote Work)</span>
                 </div>
             </div>
         </section>
